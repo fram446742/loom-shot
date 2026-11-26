@@ -10,7 +10,7 @@ name = "loom-shot"
 path = "src/main.rs"
 
 [dependencies]
-niri-ipc = { path = "../niri-ipc" }
+niri-ipc = { git = "https://github.com/fram446742/loom-niri.git", branch = "main", package = "niri-ipc" }
 serde_json = "1"
 libc = "0.2"
 image = { version = "0.25.10", default-features = false, features = ["png", "jpeg", "webp"] }
